@@ -1,0 +1,173 @@
+/*
+    Take color codes from this link:      https://colours.neilorangepeel.com/     
+    COLOR PALETTE::                       https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+
+*/
+
+/*    teal:                 #008080
+      lightpink:            #FFB6C1
+      beige:                #F5F5DC
+      slategrey:            #708090
+      tan:                  #D2B48C
+      mediumslateblue:      #7B68EE
+      darkcyan:             #008B8B
+      lightcyan:            #E0FFFF
+      gunmetal:             #343A40
+ */
+
+
+/* Global style */
+
+* html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
+body {
+    color: #008080;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    /* Shorthand declaration for font: style variant weight size/height family (e.g. down below)*/
+    font: 900 16px/1.2 Roboto Mono, monospace;
+    /* font-family: 'Estonia', cursive; */
+    /* font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 1.2; */
+    text-align: left;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 + p {
+    font-style: italic;
+}
+
+img {
+    width: 300px;
+    /* float: left;
+    overflow: auto;
+    margin: auto; */
+
+}
+
+.wrap_content {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item {
+    overflow: auto;
+    border-bottom: 2px dashed #008B8B;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: #D2B48C;
+    background-color: #008B8B;
+    padding: 2px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 139, 139, 90%);
+}
+
+a:visited {
+    color: peru;
+}
+
+/* Profile */
+
+.Profile {
+    color: #708090;
+    background-color:#E0FFFF;
+}
+
+/* Projects */
+
+/* Work experience */
+
+.work_ex {
+    font-style: none;
+}
+
+/* Education */
+
+.Edu {
+    background-image: url(images\ holder/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+.Edu p {
+    width: 60%;
+}
+
+/* Contact info */
+
+footer {
+    color: #708090;
+    background-color:  #343A40;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.contact_list {
+    list-style-type: none;
+    padding: none;
+    /* border: 0.5px dashed;  */
+}
+
+.contact_list a {
+    margin: 12px;
+    padding: 12px;
+    flex: 0 0 100px;
+    display: inline-block;
+}
+
+/* Responsive design */
+
+@media screen and (min-width: 800px) {
+
+    .item img {
+        float: left;
+        margin-right: 50px;
+    }   
+
+    .job_items {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 20px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .contact_list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    
+}
