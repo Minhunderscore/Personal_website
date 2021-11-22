@@ -99,12 +99,24 @@ a:visited {
     background-color:#E0FFFF;
 }
 
+.note {
+    float: none;
+    text-align: right;
+    margin-right: 20px;
+    display: inline-block;
+    max-width: 90%;
+}
+
 /* Projects */
+
+#note {
+    font-size: 10px;
+}
 
 /* Work experience */
 
-.work_ex {
-    font-style: none;
+.job_items h3 ~ p {
+    font-style: normal;
 }
 
 /* Education */
@@ -128,6 +140,11 @@ footer {
 
 footer h2 {
     text-align: center;
+}
+
+footer p {
+    /* padding: 0 20px; */
+    display: inline;
 }
 
 .contact_list {
@@ -169,5 +186,8 @@ footer h2 {
 }
 
 @media screen and (max-width: 799px) {
-    
+    .note {
+        visibility: hidden;
+        display: none;
+    }
 }
