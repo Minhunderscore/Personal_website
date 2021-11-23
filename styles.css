@@ -34,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     /* Shorthand declaration for font: style variant weight size/height family (e.g. down below)*/
-    font: 900 16px/1.2 Roboto Mono, monospace;
+    font: 600 16px/1.2 Roboto Mono, monospace;
     /* font-family: 'Estonia', cursive; */
     /* font-family: 'Roboto Mono', monospace;
     font-size: 16px;
@@ -48,6 +48,10 @@ h1 {
 
 h2 {
     font-size: 2em;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', monospace;
 }
 
 h3 + p {
@@ -98,7 +102,9 @@ a:visited {
 
 .Profile {
     color: #FFFAF0;
-    background-color:#708090;
+    background-color: slategray;
+    /* background-color: darkgray;       */
+
 }
 
 .note {
@@ -124,6 +130,7 @@ a:visited {
 /* Education */
 
 .Edu {
+    color: darkblue;
     background-image: url(images\ holder/joanna-kosinska-unsplash.jpg);
     background-size: cover;
     background-position: top right;
@@ -131,6 +138,11 @@ a:visited {
 
 .Edu p {
     width: 60%;
+}
+
+#id{
+    font-family: 'Roboto Slab', monospace;
+    font-weight: 600;
 }
 
 /* Contact info */
@@ -189,11 +201,11 @@ footer p {
 
 @media screen and (max-width: 799px) {
 
-    body {
+    /* body {
         background-image: url(images\ holder/a_sprout.jpg);
         background-position: top left;
         color: #FFFAF0;
-    }
+    } */
 
     .Projects a {
         color: #FFFAF0;
