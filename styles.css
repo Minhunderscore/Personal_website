@@ -6,6 +6,7 @@
 
 /*    teal:                 #008080
       lightpink:            #FFB6C1
+      floralwhite:          #FFFAF0
       beige:                #F5F5DC
       slategrey:            #708090
       tan:                  #D2B48C
@@ -13,6 +14,7 @@
       darkcyan:             #008B8B
       lightcyan:            #E0FFFF
       gunmetal:             #343A40
+      midnightblue:         #191970
  */
 
 
@@ -95,8 +97,8 @@ a:visited {
 /* Profile */
 
 .Profile {
-    color: #708090;
-    background-color:#E0FFFF;
+    color: #FFFAF0;
+    background-color:#708090;
 }
 
 .note {
@@ -186,6 +188,27 @@ footer p {
 }
 
 @media screen and (max-width: 799px) {
+
+    body {
+        background-image: url(images\ holder/a_sprout.jpg);
+        background-position: top left;
+        color: #FFFAF0;
+    }
+
+    .Projects a {
+        color: #FFFAF0;
+    }
+
+    /* .Profile {
+        color: #343A40;
+        background-color: #98FB98;
+    } */
+
+    .wrap_content img {
+        visibility: hidden;
+        display: none;
+    }
+
     .note {
         visibility: hidden;
         display: none;
